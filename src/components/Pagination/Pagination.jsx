@@ -51,10 +51,4 @@ const Pagination = () => {
   );
 };
 
-// Pagination.propTypes = {
-//   offset: PropTypes.number.isRequired,
-//   paginate: PropTypes.func.isRequired,
-//   page: PropTypes.func.isRequired,
-// };
-
 export default Pagination;

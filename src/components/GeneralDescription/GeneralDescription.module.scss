@@ -54,15 +54,15 @@
   }
 }
 
-.img{
-  background: url('../../img/laptop.jpg');
+.img {
+  background: url("../../img/laptop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 130%;
   height: 300px;
   @media (min-width: 1280px) {
     width: 50%;
-    background: url('../../img/laptop.jpg');
+    background: url("../../img/laptop.jpg");
     background-repeat: no-repeat;
     margin: 20px;
     background-size: 100% auto;
