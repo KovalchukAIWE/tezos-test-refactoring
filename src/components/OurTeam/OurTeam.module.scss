@@ -1,0 +1,90 @@
+.header {
+  width: 70%;
+  font-size: 30px;
+  margin: 20px auto;
+  @media (min-width: 1280px) {
+    font-size: 40px;
+  }
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  @media (min-width: 1280px) {
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+.left {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  @media (min-width: 1280px) {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  &__img {
+    background-image: url('../../img/presentation.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+  }
+}
+
+.right {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+  @media (min-width: 1280px) {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  &__img {
+    background-image: url('../../img/discution.jpg');
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 390px;
+    background-size: cover;
+  }
+}
+
+.paragraph {
+  width: 70%;
+  margin: 20px auto;
+  @media (min-width: 1280px) {
+    width: 100%;
+    margin: 20px 0;
+  }
+}
+
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  &__btn {
+    border: none;
+    background-color: inherit;
+    color: blue;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

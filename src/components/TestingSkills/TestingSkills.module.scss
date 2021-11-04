@@ -1,0 +1,162 @@
+.wrapper {
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.wrapper_block {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.statistic_block {
+  max-width: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  order: 1;
+  margin: 0 auto;
+}
+
+.left_block {
+  order: 2;
+}
+
+.right_block {
+  order: 3;
+}
+.statistic_markup,
+.statistic_rest,
+.statistic_js,
+.statistic_framework {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  background-color: #2b7df7;
+  color: #ffff;
+  justify-content: center;
+  margin: 5px;
+  align-items: center;
+  font-size: 10px;
+  padding: 25px;
+}
+
+.statistic_markup {
+  border-top-left-radius: 100%;
+}
+
+.statistic_rest {
+  border-top-right-radius: 100%;
+}
+
+.statistic_js {
+  border-bottom-left-radius: 100%;
+}
+
+.statistic_framework {
+  border-bottom-right-radius: 100%;
+}
+
+.icon_text {
+  display: flex;
+  margin-top: 10px;
+}
+
+.block_text {
+  font-size: 10px;
+  padding-top: 5px;
+}
+
+.icon_check {
+  background-image: url('../../img/check.svg');
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 28px;
+  padding-right: 50px;
+}
+
+.block_header {
+  font-size: 30px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .left_block {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 1;
+  }
+
+  .right_block {
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    order: 2;
+  }
+
+  .statistic_block {
+    order: 3;
+    margin-top: -33px;
+  }
+
+  .icon_text {
+    flex-wrap: nowrap;
+    margin-top: 50px;
+  }
+
+  .block_header {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper_block {
+    justify-content: space-around;
+    flex-wrap: nowrap;
+  }
+
+  .left_block,
+  .right_block {
+    width: calc((100%-706px) / 2);
+  }
+
+  .statistic_block {
+    max-width: 620px;
+    flex-wrap: wrap;
+    justify-content: center;
+    order: 2;
+  }
+
+  .statistic_markup,
+  .statistic_rest,
+  .statistic_js,
+  .statistic_framework {
+    width: 200px;
+    height: 200px;
+    font-size: 18px;
+    padding: 62px;
+  }
+
+  .icon_text {
+    margin-top: 43px;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .left_block {
+    order: 1;
+  }
+
+  .right_block {
+    order: 3;
+  }
+  .block_text {
+    font-size: 16px;
+  }
+  .block_header {
+    font-size: 40px;
+  }
+}

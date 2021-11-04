@@ -1,0 +1,25 @@
+.block_wrapper {
+  width: 100%;
+  height: 793px;
+  background-color: #2b7df7;
+  position: relative;
+}
+
+.bg_image {
+  background: url('../../img/background.jpg');
+  background-size: cover;
+  opacity: 0.3;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 800px;
+}
+
+.orange_order {
+  width: 100%;
+  height: 20px;
+  background-color: orange;
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+}
