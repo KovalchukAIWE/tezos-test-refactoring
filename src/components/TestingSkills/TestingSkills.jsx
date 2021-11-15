@@ -3,7 +3,7 @@ import styles from "./TestingSkills.module.scss";
 
 const TestingSkills = () => (
   <div id='skills' className={styles.container}>
-    <p className={styles.header}>Testing skills</p>
+    <p className={styles.title}>Testing skills</p>
     <div className={styles.wrapper}>
       <div className={styles.left}>
         <div className={styles.check}>

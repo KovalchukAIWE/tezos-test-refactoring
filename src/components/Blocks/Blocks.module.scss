@@ -22,13 +22,12 @@
 
   &__wrapper {
     width: 100%;
-    padding: 157px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 157px auto;
+    margin: 62px auto;
     @include mq-desktop {
-      width: 93%;
+      width: 1240px;
       justify-content: space-between;
     }
   }
@@ -60,10 +59,11 @@
     font-weight: 700;
     color: #fff;
     @include mq-tablet {
-      font-size: 60px;
+      font-size: 54px;
     }
     @include mq-desktop {
       text-align: left;
+      margin: 25px 0;
     }
   }
 
@@ -76,9 +76,11 @@
     color: #fff;
     @include mq-tablet {
       font-size: 32px;
+      margin: 14px 0 50px;
     }
     @include mq-desktop {
       text-align: left;
+      margin: 0;
     }
   }
 
@@ -94,7 +96,7 @@
       display: block;
       background: url("../../img/logo.svg");
       background-repeat: no-repeat;
-      width: 100%;
+      width: 116px;
       height: 132px;
     }
     display: none;

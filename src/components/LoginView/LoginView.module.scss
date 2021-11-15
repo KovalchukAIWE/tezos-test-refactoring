@@ -1,21 +1,21 @@
-.block_wrapper {
+.container {
   width: 100%;
   height: 793px;
   background-color: #2b7df7;
   position: relative;
+
+  &__bg {
+    background: url("../../img/background.jpg");
+    background-size: cover;
+    opacity: 0.3;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 800px;
+  }
 }
 
-.bg_image {
-  background: url("../../img/background.jpg");
-  background-size: cover;
-  opacity: 0.3;
-  background-repeat: no-repeat;
-  position: absolute;
-  width: 100%;
-  height: 800px;
-}
-
-.orange_order {
+.line {
   width: 100%;
   height: 20px;
   background-color: orange;

@@ -1,12 +1,11 @@
-import React, { useContext } from "react";
-// import PropTypes from 'prop-types';
-import { BlocksContext } from "../Provider/Provider";
+import React from "react";
+import { useBlocksContext } from "../../Context/BlocksContext";
 import { pageData } from "../../helpers/pageData";
 
 import styles from "./Pagination.module.scss";
 
 const Pagination = () => {
-  const { handleOffset, offset, limit, totalCount } = useContext(BlocksContext);
+  const { handleOffset, offset, limit, totalCount } = useBlocksContext();
 
   const pages = Math.ceil(totalCount / limit);
   const currentPages = pageData(offset, limit, pages);

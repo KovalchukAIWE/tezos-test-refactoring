@@ -3,10 +3,10 @@ import styles from "./OurTeam.module.scss";
 
 const OurTeam = () => (
   <>
-    <div id='team' className={styles.header}>
+    <div id='team' className={styles.title}>
       Our team
     </div>
-    <div className={styles.wrapper}>
+    <div className={styles.container}>
       <div className={styles.left}>
         <div className={styles.left__img} />
         <p className={styles.paragraph}>

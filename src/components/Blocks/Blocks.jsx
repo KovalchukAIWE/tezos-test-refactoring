@@ -1,6 +1,6 @@
-import React, { useContext } from "react";
+import React from "react";
 import Select from "react-select";
-import { BlocksContext } from "../Provider/Provider";
+import { useBlocksContext } from "../../Context/BlocksContext";
 import Table from "../Table";
 import Pagination from "../Pagination/Pagination";
 import { selectQuantityPages } from "../../helpers/selectQuantityPages";
@@ -8,7 +8,7 @@ import { selectQuantityPages } from "../../helpers/selectQuantityPages";
 import styles from "./Blocks.module.scss";
 
 const Blocks = () => {
-  const { blocks, limit, offset, handleLimit } = useContext(BlocksContext);
+  const { blocks, limit, offset, handleLimit } = useBlocksContext();
 
   const indexOfLastBlock = offset * limit;
   const indexOfFirstBlock = indexOfLastBlock - limit;

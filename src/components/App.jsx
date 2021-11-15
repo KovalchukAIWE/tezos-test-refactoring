@@ -1,16 +1,12 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-
-import Provider from "./Provider/Provider";
-
-import Header from "./Header";
-import Navigation from "../router/Navigation";
+import Provider from "../Context/BlocksContext";
+import Navigation from "../router";
 import Footer from "./Footer";
 
 const App = () => (
   <BrowserRouter>
     <Provider>
-      <Header />
       <Navigation />
       <Footer />
     </Provider>

@@ -4,12 +4,12 @@ import LoginForm from "../LoginForm/LoginForm";
 import styles from "./LoginView.module.scss";
 
 const LoginView = () => (
-  <div className={styles.block_wrapper}>
-    <div className={styles.bg_image} />
-    <div className={styles.form_wrapper}>
+  <div className={styles.container}>
+    <div className={styles.container__bg} />
+    <div>
       <LoginForm />
     </div>
-    <div className={styles.orange_border} />
+    <div className={styles.line} />
   </div>
 );
 

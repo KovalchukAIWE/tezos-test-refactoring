@@ -22,25 +22,25 @@ const Footer = () => (
     <div className={styles.footer}>
       <ul className={styles.footer__links}>
         <li className={styles.footer__list}>
-          <a href='#skills' className={styles.footer__items}>
+          <a href='#skills' className={styles.footer__item}>
             Testing skills
           </a>
         </li>
         <li className={styles.footer__list}>
-          <a href='#description' className={styles.footer__items}>
+          <a href='#description' className={styles.footer__item}>
             General description of the assignment
           </a>
         </li>
         <li className={styles.footer__list}>
-          <a href='#team' className={styles.footer__items}>
+          <a href='#team' className={styles.footer__item}>
             Our team
           </a>
         </li>
       </ul>
       <ul className={styles.footer__links}>
-        <li className={styles.footer__items}>About us</li>
-        <li className={styles.footer__items}>Carrier</li>
-        <li className={styles.footer__items}>Blog</li>
+        <li className={styles.footer__item}>About us</li>
+        <li className={styles.footer__item}>Carrier</li>
+        <li className={styles.footer__item}>Blog</li>
       </ul>
     </div>
     <div className={styles.footer__copyright}>&copy;Copyright</div>
