@@ -1,6 +1,6 @@
 import React from "react";
 import Select from "react-select";
-import { useBlocksContext } from "../../Context/BlocksContext";
+import { useBlocksContext } from "../../context/BlocksContext";
 import Table from "../Table";
 import Pagination from "../Pagination/Pagination";
 import { selectQuantityPages } from "../../helpers/selectQuantityPages";
@@ -26,7 +26,7 @@ const Blocks = () => {
           </p>
         </div>
         <div className={styles.blocks__table}>
-          <p>Blocks list</p>
+          <p>Tezos blocks</p>
           <div className={styles.blocks__select}>
             <p>Items per page</p>
             <Select

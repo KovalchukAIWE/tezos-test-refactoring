@@ -1,5 +1,5 @@
 import React from "react";
-import { useBlocksContext } from "../../Context/BlocksContext";
+import { useBlocksContext } from "../../context/BlocksContext";
 import { pageData } from "../../helpers/pageData";
 
 import styles from "./Pagination.module.scss";

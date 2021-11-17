@@ -1,5 +1,5 @@
 import React from "react";
-import { useBlocksContext } from "../../Context/BlocksContext";
+import { useBlocksContext } from "../../context/BlocksContext";
 import "./Table.module.scss";
 
 const dayjs = require("dayjs");

@@ -25,7 +25,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 62px auto;
+    margin: 0 auto;
+    padding: 157px 0;
     @include mq-desktop {
       width: 1240px;
       justify-content: space-between;

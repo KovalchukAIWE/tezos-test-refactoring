@@ -42,8 +42,8 @@ const Footer = () => (
         <li className={styles.footer__item}>Carrier</li>
         <li className={styles.footer__item}>Blog</li>
       </ul>
+      <p className={styles.footer__copyright}>&copy;Copyright</p>
     </div>
-    <div className={styles.footer__copyright}>&copy;Copyright</div>
   </div>
 );
 

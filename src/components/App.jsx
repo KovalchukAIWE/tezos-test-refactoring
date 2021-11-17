@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter } from "react-router-dom";
-import Provider from "../Context/BlocksContext";
+import Provider from "../context/BlocksContext";
 import Navigation from "../router";
 import Footer from "./Footer";
 
