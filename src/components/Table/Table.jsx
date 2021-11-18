@@ -1,13 +1,13 @@
 import React from "react";
 import { useBlocksContext } from "../../context/BlocksContext";
-import "./Table.module.scss";
+import styles from "./Table.module.scss";
 
 const dayjs = require("dayjs");
 
 const Table = () => {
   const { blocks } = useBlocksContext();
   return (
-    <div>
+    <div className={styles.container}>
       <table>
         <thead>
           <tr>

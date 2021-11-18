@@ -12,9 +12,11 @@
   width: 100%;
   display: flex;
   margin: 0 auto;
+  padding: 30px;
   justify-content: space-between;
   @media (min-width: 768px){
     width: 768px;
+    padding: 96px;
   }
   @media (min-width: 1240px){
     width: 1240px;
@@ -32,11 +34,11 @@
   }
 
   &__items {
-    width: 65%;
+    width: 40%;
     display: flex;
-    justify-content: space-between;
     @media (min-width: 768px) {
       width: 30%;
+      justify-content: space-between;
     }
   }
 

@@ -1,11 +1,17 @@
 .title {
-  width: 1240px;
+  width: 100%;
   font-size: 30px;
   margin: 0 auto;
+  text-align: center;
+  padding: 60px 0 30px;
+  @media (min-width: 768px) {
+    width: 506px;
+  }
   @media (min-width: 1240px) {
     width: 1240px;
     font-size: 40px;
     margin-top: 100px;
+    text-align: left;
   }
 }
 
@@ -15,6 +21,9 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 30px;
+  @media (min-width: 768px) {
+    width: 506px;
+  }
   @media (min-width: 1240px) {
     flex-wrap: nowrap;
     width: 1240px;
@@ -68,11 +77,11 @@
 }
 
 .paragraph {
-  width: 70%;
-  margin: 20px auto;
+  width: 100%;
+  padding: 30px;
   @media (min-width: 1240px) {
     width: 100%;
-    margin: 20px 0;
+    // margin: 20px auto;
   }
 }
 

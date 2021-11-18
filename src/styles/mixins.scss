@@ -5,7 +5,7 @@
 }
 
 @mixin mq-desktop {
-  @media (min-width: 1224px) {
+  @media (min-width: 1240px) {
     @content;
   }
 }
