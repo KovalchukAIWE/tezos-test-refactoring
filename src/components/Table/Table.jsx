@@ -1,5 +1,6 @@
 import React from "react";
 import { useBlocksContext } from "../../context/BlocksContext";
+import { MUTES_TO_XTZ } from "../../helpers/constants";
 import styles from "./Table.module.scss";
 
 const dayjs = require("dayjs");
@@ -29,9 +30,6 @@ const Table = () => {
             <th>
               <div>Fee</div>
             </th>
-            <th>
-              <div>Endorsements</div>
-            </th>
           </tr>
         </thead>
         <tbody>
@@ -53,19 +51,10 @@ const Table = () => {
                   <div>{item.number_of_operations}</div>
                 </td>
                 <td>
-                  <div>
-                    {(item.volume * 1e-7).toFixed(6)}
-                    &#42793;
-                  </div>
+                  <div>{MUTES_TO_XTZ(item.volume.toFixed(6))}</div>
                 </td>
                 <td>
-                  <div>
-                    {(item.fees * 1e-6).toFixed(6)}
-                    &#42793;
-                  </div>
-                </td>
-                <td>
-                  <div>{item.endorsements}</div>
+                  <div>{MUTES_TO_XTZ(item.fees.toFixed(6))}</div>
                 </td>
               </tr>
             </>

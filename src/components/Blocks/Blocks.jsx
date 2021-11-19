@@ -40,6 +40,7 @@ const Blocks = () => {
           <Pagination />
         </div>
       </div>
+      <div className={styles.line} />
     </div>
   );
 };

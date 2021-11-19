@@ -29,11 +29,11 @@ function LoginForm() {
   };
   return (
     <div className={styles.form}>
-      <div className={styles.title}>Login</div>
+      <div className={styles.form__title}>Login</div>
       <div>
         <form onSubmit={handleSubmit(submitForm)}>
           <input
-            className={styles.input}
+            className={styles.form__input}
             type='text'
             name='email'
             placeholder='Email'
@@ -41,7 +41,7 @@ function LoginForm() {
           />
           <p> {errors.email?.message} </p>
           <input
-            className={styles.input}
+            className={styles.form__input}
             type='password'
             name='password'
             placeholder='Password'
@@ -49,14 +49,14 @@ function LoginForm() {
           />
           <p> {errors.password?.message} </p>
           <input
-            className={styles.input}
+            className={styles.form__input}
             type='password'
             name='confirmPassword'
             placeholder='Password confirmation'
             {...register("confirmPassword")}
           />
           <p> {errors.confirmPassword && "Passwords Should Match!"} </p>
-          <input className={styles.button} type='submit' id='submit' />
+          <input className={styles.form__button} type='submit' id='submit' />
         </form>
       </div>
     </div>

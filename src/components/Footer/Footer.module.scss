@@ -10,10 +10,10 @@
   margin: 0 auto;
   justify-content: space-between;
   @media (min-width: 768px) {
-    width: 768px;
+    width: 710px;
   }
   @media (min-width: 1240px) {
-    width: 1240px;
+    width: 1200px;
   }
 
   &__items {
@@ -68,14 +68,12 @@
   margin: 40px auto 0;
   color: white;
   display: grid;
-  // grid-template-columns: 375px 10fr 1fr;
   @media (min-width: 768px) {
-    width: 764px;
+    width: 710px;
     grid-template-columns: 375px 10fr 1fr;
   }
   @media (min-width: 1240px) {
-    grid-template-columns: 375px 10fr 1fr;
-    width: 1240px;
+    width: 1200px;
   }
 
   &__links {
