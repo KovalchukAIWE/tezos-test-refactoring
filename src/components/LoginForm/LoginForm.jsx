@@ -8,10 +8,8 @@ import * as yup from "yup";
 import styles from "./LoginForm.module.scss";
 
 const schema = yup.object().shape({
-  firstName: yup.string().required("First Name should be required please"),
-  lastName: yup.string().required(),
   email: yup.string().email().required(),
-  password: yup.string().min(4).max(15).required(),
+  password: yup.string().min(8).max(15).required(),
   confirmPassword: yup.string().oneOf([yup.ref("password"), null]),
 });
 
@@ -39,7 +37,7 @@ function LoginForm() {
             placeholder='Email'
             {...register("email")}
           />
-          <p> {errors.email?.message} </p>
+          <p> {errors.email?.message && "Invalid email"} </p>
           <input
             className={styles.form__input}
             type='password'
@@ -47,7 +45,11 @@ function LoginForm() {
             placeholder='Password'
             {...register("password")}
           />
-          <p> {errors.password?.message} </p>
+          <p>
+            {" "}
+            {errors.password?.message &&
+              "Password must contain only latin letters, 1 upper-case character, 1 lower-case character, one number and one special character."}{" "}
+          </p>
           <input
             className={styles.form__input}
             type='password'
@@ -55,7 +57,7 @@ function LoginForm() {
             placeholder='Password confirmation'
             {...register("confirmPassword")}
           />
-          <p> {errors.confirmPassword && "Passwords Should Match!"} </p>
+          <p> {errors.confirmPassword && "Password doesn’t match"} </p>
           <input className={styles.form__button} type='submit' id='submit' />
         </form>
       </div>

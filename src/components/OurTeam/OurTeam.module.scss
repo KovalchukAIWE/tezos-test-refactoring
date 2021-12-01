@@ -43,15 +43,23 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-right: 15px;
   }
 
   &__img {
-    background-image: url("../../img/presentation.jpg");
+    background-image: url("../../img/presentation.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 390px;
+    height: 180px;
     background-size: cover;
+    @media (min-width: 768px) {
+      width: 505px;
+      height: 290px;
+    }
+    @media (min-width: 1240px) {
+      width: 100%;
+      height: 380px;
+    }
   }
 }
 
@@ -64,24 +72,38 @@
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin-left: 15px;
   }
 
   &__img {
-    background-image: url("../../img/discussion.jpg");
+    background-image: url("../../img/discussion.png");
     background-repeat: no-repeat;
     width: 100%;
-    height: 390px;
+    height: 180px;
     background-size: cover;
+    @media (min-width: 768px) {
+      width: 505px;
+      height: 290px;
+    }
+    @media (min-width: 1240px) {
+      width: 100%;
+      height: 380px;
+    }
   }
 }
 
 .paragraph {
   width: 100%;
-  padding: 30px;
+  padding: 30px;text-align: left;
+  font-size: 16px;
+  font-weight: 400;
+  @media (min-width: 768px) {
+    padding: 0;
+    text-align: center;
+  }
   @media (min-width: 1240px) {
     width: 100%;
-    // margin: 20px auto;
+    text-align: left;
   }
 }
 
@@ -93,7 +115,19 @@
   &__btn {
     border: none;
     background-color: inherit;
-    color: blue;
+    color: #2C7DF7;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+    border-right: 2px solid;
+    height: 25px;
+    padding-right: 10px;
+    @media (min-width: 768px) {
+      margin-top: 15px;
+    }
+    @media (min-width: 1240px) {
+      margin-top: 25px;
+    }
     &:hover {
       cursor: pointer;
     }

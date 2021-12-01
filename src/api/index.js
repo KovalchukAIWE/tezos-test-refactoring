@@ -1,15 +1,13 @@
 /* eslint-disable arrow-body-style */
 import axios from "axios";
 
-// const blocksApi = axios.create({
-const baseUrl = "https://api.teztracker.com/v2/data/tezos";
-// });
-
 const NETWORK = "mainnet";
+const blocksApi = axios.create({
+  baseURL: `https://api.teztracker.com/v2/data/tezos/${NETWORK}`,
+});
 
 export const getDataFromApi = async (offset = 0, limit = 10) => {
-  const url = `${baseUrl}/${NETWORK}/blocks`;
-  const res = await axios.get(url, {
+  const res = await blocksApi.get("blocks", {
     params: {
       offset,
       limit,

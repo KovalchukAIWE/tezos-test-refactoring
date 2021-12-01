@@ -33,7 +33,7 @@
       justify-content: space-between;
     }
     @include mq-desktop {
-      width: 1259px;
+      width: 1240px;
       padding: 157px 0;
     }
   }
@@ -49,6 +49,10 @@
     padding: 30px 0;
   }
 
+  &__text {
+    padding: 7px 0;
+  }
+
   &__table {
     display: grid;
     height: auto;
@@ -56,8 +60,10 @@
     z-index: 2;
     padding: 20px;
     margin: 0 auto;
+    border-radius: 4px;
+    max-width: 750px;
     @include mq-desktop {
-      padding: 0;
+      padding: 16px 31px;
       margin: 0;
     }
   }
@@ -100,7 +106,7 @@
     margin: 0 auto;
     padding-bottom: 40px;
     @include mq-desktop {
-      width: 404px;
+      width: 385px;
       margin: 0;
     }
   }
@@ -115,12 +121,19 @@
     }
     display: none;
   }
+
+  &__name {
+    font-size: 18px;
+    font-weight: 600;
+  }
 }
 
 .line {
   width: 100%;
-  height: 20px;
-  background-color: orange;
+  height: 36px;
+  background-image: url(../../img/orange-border.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   position: absolute;
   bottom: 0;
   z-index: 0;

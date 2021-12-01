@@ -35,13 +35,13 @@
 .left {
   order: 2;
   @media (min-width: 768px) {
-    width: 55%;
+    width: 340px;
     display: flex;
     flex-wrap: wrap;
     order: 1;
   }
   @media (min-width: 1240px) {
-    width: calc((100%-706px) / 2);
+    width: 360px;
     order: 1;
   }
 }
@@ -49,19 +49,19 @@
 .right {
   order: 3;
   @media (min-width: 768px) {
-    width: 55%;
+    width: 340px;
     display: flex;
     flex-wrap: wrap;
     order: 2;
   }
   @media (min-width: 1240px) {
-    width: calc((100%-706px) / 2);
+    width: 360px;
     order: 3;
   }
 }
 
 .statistic {
-  max-width: 240px;
+  width: 240px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -69,9 +69,11 @@
   margin: 0 auto;
   @media (min-width: 768px) {
     order: 3;
+    margin: 0;
+    width: 340px;
   }
   @media (min-width: 1240px) {
-    max-width: 620px;
+    width: 620px;
     flex-wrap: wrap;
     justify-content: center;
     order: 2;
@@ -89,11 +91,15 @@
     font-size: 10px;
     padding: 25px;
     border-top-left-radius: 100%;
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1240px) {
       width: 200px;
       height: 200px;
       font-size: 18px;
-      padding: 62px;
+      padding: 70px 27px 33px;
     }
   }
 
@@ -109,11 +115,15 @@
     font-size: 10px;
     padding: 25px;
     border-top-right-radius: 100%;
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1240px) {
       width: 200px;
       height: 200px;
       font-size: 18px;
-      padding: 62px;
+      padding: 70px 27px 33px;
     }
   }
 
@@ -129,6 +139,10 @@
     font-size: 10px;
     padding: 25px;
     border-bottom-left-radius: 100%;
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1240px) {
       width: 200px;
       height: 200px;
@@ -149,6 +163,10 @@
     font-size: 10px;
     padding: 25px;
     border-bottom-right-radius: 100%;
+    @media (min-width: 768px) {
+      width: 160px;
+      height: 160px;
+    }
     @media (min-width: 1240px) {
       width: 200px;
       height: 200px;
@@ -167,7 +185,7 @@
     margin-top: 50px;
   }
   @media (min-width: 1240px) {
-    margin-top: 43px;
+    margin-top: 100px;
     flex-wrap: nowrap;
     justify-content: space-between;
   }
@@ -178,6 +196,7 @@
     width: 50px;
     height: 28px;
     padding-right: 50px;
+    margin-top: 6px;
   }
 
   &__text {

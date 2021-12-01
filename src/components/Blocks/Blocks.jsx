@@ -22,13 +22,13 @@ const Blocks = () => {
           <div className={styles.blocks__logo} />
           <p className={styles.blocks__title}>Tezos Ukraine</p>
           <p className={styles.blocks__subtitle}>
-            Front-end development test assigment
+            Front-end development test assignment
           </p>
         </div>
         <div className={styles.blocks__table}>
-          <p>Tezos blocks</p>
+          <p className={styles.blocks__name}>Tezos blocks</p>
           <div className={styles.blocks__select}>
-            <p>Items per page</p>
+            <p className={styles.blocks__text}>Items per page</p>
             <Select
               defaultValue={selectQuantityPages[0]}
               options={selectQuantityPages}

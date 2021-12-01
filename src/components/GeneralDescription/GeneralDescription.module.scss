@@ -5,7 +5,8 @@
   @media (min-width: 1240px) {
     width: 1240px;
     justify-content: space-between;
-    margin-bottom: 30px;
+    // margin-bottom: 30px;
+    height: auto;
     margin: 0 auto;
     flex-wrap: nowrap;
   }
@@ -19,6 +20,8 @@
   }
   @media (min-width: 1240px) {
     width: 50%;
+    padding: 0;
+    padding-right: 180px;
   }
 
   &__header {
@@ -26,15 +29,16 @@
     font-weight: normal;
     text-align: center;
     width: 80%;
-    margin: 0 auto;
-    // padding: 40px;
+    margin: 0 auto 35px;
     @media (min-width: 768px) {
       width: 506px;
+      margin-bottom: 45px;
     }
     @media (min-width: 1240px) {
       font-size: 40px;
       text-align: left;
       width: 100%;
+      margin-bottom: 50px;
     }
   }
 
@@ -63,16 +67,17 @@
 }
 
 .img {
-  background: url("../../img/laptop.jpg");
+  background: url("../../img/laptop-md.png");
   background-repeat: no-repeat;
   background-size: cover;
   width: 130%;
   height: 300px;
   @media (min-width: 1240px) {
     width: 50%;
-    background: url("../../img/laptop.jpg");
+    height: auto;
+    background: url("../../img/laptop.png");
     background-repeat: no-repeat;
-    margin: 20px;
-    background-size: 100% auto;
+    // margin: 20px;
+    background-size: cover;
   }
 }

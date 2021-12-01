@@ -6,17 +6,16 @@
   display: flex;
   align-items: center;
   background-color: #2b7df7;
+  padding: 0 30px;
 }
 
 .nav {
   width: 100%;
   display: flex;
   margin: 0 auto;
-  padding: 30px;
   justify-content: space-between;
   @media (min-width: 768px){
     width: 768px;
-    padding: 96px;
   }
   @media (min-width: 1240px){
     width: 1240px;
@@ -37,7 +36,7 @@
     width: 40%;
     display: flex;
     @media (min-width: 768px) {
-      width: 30%;
+      width: 320px;
       justify-content: space-between;
     }
   }
@@ -55,7 +54,7 @@
       cursor: pointer;
     }
     @media (min-width: 768px) {
-      width: 200px;
+      width: 190px;
       height: 60px;
     }
   }
