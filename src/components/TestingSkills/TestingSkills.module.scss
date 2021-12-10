@@ -24,12 +24,20 @@
 }
 
 .wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  @media (min-width: 1240px) {
-    justify-content: space-around;
-    flex-wrap: nowrap;
+  // display: flex;
+  // flex-wrap: wrap;
+  display: grid;
+  @media (min-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+    // grid-template-rows: 1fr;
   }
+  @media (min-width: 1240px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  // @media (min-width: 1240px) {
+  //   justify-content: space-around;
+  //   flex-wrap: nowrap;
+  // }
 }
 
 .left {
@@ -52,7 +60,7 @@
     width: 340px;
     display: flex;
     flex-wrap: wrap;
-    order: 2;
+    order: 3;
   }
   @media (min-width: 1240px) {
     width: 360px;
@@ -61,7 +69,7 @@
 }
 
 .statistic {
-  width: 240px;
+  width: 320px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -73,16 +81,16 @@
     width: 340px;
   }
   @media (min-width: 1240px) {
-    width: 620px;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: 520px;
+    // flex-wrap: wrap;
+    // justify-content: center;
     order: 2;
   }
 
   &__markup {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #2b7df7;
     color: #ffff;
     justify-content: center;
@@ -105,8 +113,8 @@
 
   &__rest {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #2b7df7;
     color: #ffff;
     justify-content: center;
@@ -129,8 +137,8 @@
 
   &__js {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #2b7df7;
     color: #ffff;
     justify-content: center;
@@ -153,8 +161,8 @@
 
   &__framework {
     display: flex;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: #2b7df7;
     color: #ffff;
     justify-content: center;

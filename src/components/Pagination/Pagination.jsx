@@ -31,7 +31,7 @@ const Pagination = () => {
           key={`key-${el.pageNumber}`}
           type='button'
           aria-label={`button ${el.pageNumber}  page`}
-          className={el.active ? styles.active : ""}
+          className={el.active ? styles.active : styles.btn}
           onClick={() => handlePage(el.pageOffset)}
           name={el.pageNumber}
         >

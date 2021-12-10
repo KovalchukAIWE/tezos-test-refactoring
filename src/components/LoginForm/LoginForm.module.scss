@@ -15,9 +15,14 @@
   max-width: 320px;
   width: 100%;
   padding: 15px 0;
+
   @media (min-width: 768px){
     max-width: 605px;
     padding: 45px 0;
+  }
+
+  &__wrapper {
+    row-gap: 30px;
   }
 
   &__title {
@@ -26,25 +31,12 @@
     place-items: center;
     font-size: 36px;
     font-weight: 700;
-    margin-bottom: 15px;
-    @media (min-width: 768px) {
-      margin-bottom: 25px;
-    }
   }
 
   &__input {
-    width: 206px;
-    height: 60px;
-    font-size: 13px;
-    font-weight: 400;
-    border-radius: 4px;
-    border: none;
-    padding-left: 10px;
-    margin-bottom: 20px;
-    @media (min-width: 768px) {
-      width: 390px;
-      margin-bottom: 30px;
-      font-size: 15px;
+    margin-top: 22px;
+    @media (max-width: 768px) {
+      margin-top: 4px;
     }
   }
 
@@ -55,17 +47,19 @@
     border-radius: 4px;
     background-color: #ffbf2b;
     cursor: pointer;
-    font-style: 16px;
+    font-size: 16px;
     font-weight: 700;
     color: #fff;
+    margin-top: 30px;
     @media (min-width: 768px) {
       width: 220px;
+      margin-top: 20px;
     }
   }
 
   &__message {
     width: 390px;
-    margin-top: 10px;
+    margin: 0 auto;
     font-size: 12px;
     font-weight: 400;
     text-align: left;

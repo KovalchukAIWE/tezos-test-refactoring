@@ -5,7 +5,6 @@
   @media (min-width: 1240px) {
     width: 1240px;
     justify-content: space-between;
-    // margin-bottom: 30px;
     height: auto;
     margin: 0 auto;
     flex-wrap: nowrap;
@@ -70,14 +69,16 @@
   background: url("../../img/laptop-md.png");
   background-repeat: no-repeat;
   background-size: cover;
-  width: 130%;
-  height: 300px;
+  width: 100%;
+  height: 180px;
+  @media (min-width: 768px) {
+    height: 300px;
+  }
   @media (min-width: 1240px) {
     width: 50%;
     height: auto;
     background: url("../../img/laptop.png");
     background-repeat: no-repeat;
-    // margin: 20px;
     background-size: cover;
   }
 }

@@ -15,7 +15,7 @@ export const BlocksContext = createContext();
 export const useBlocksContext = () => useContext(BlocksContext);
 
 const Provider = ({ children }) => {
-  const [limit, setLimit] = useState(10);
+  const [limit, setLimit] = useState(3);
   const [offset, setOffset] = useState(0);
   const [blocks, setBlocks] = useState([]);
   const [totalCount, setTotalCount] = useState("");

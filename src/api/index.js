@@ -6,7 +6,7 @@ const blocksApi = axios.create({
   baseURL: `https://api.teztracker.com/v2/data/tezos/${NETWORK}`,
 });
 
-export const getDataFromApi = async (offset = 0, limit = 10) => {
+export const getDataFromApi = async (offset = 0, limit = 15) => {
   const res = await blocksApi.get("blocks", {
     params: {
       offset,

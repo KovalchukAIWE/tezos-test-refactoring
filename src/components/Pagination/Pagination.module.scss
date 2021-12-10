@@ -9,6 +9,8 @@
   &__link {
     padding: 5px 8px;
     color: $c-text;
+    border: none;
+    background-color: inherit;
     &:hover {
       background-color: #e0f0ec;
       cursor: pointer;
@@ -16,7 +18,7 @@
   }
 }
 
-button {
+.btn {
   background-color: inherit;
   border: none;
   padding: 5px;
@@ -27,5 +29,10 @@ button {
 
 .active {
   border: none;
-  background-color: #e0f0ec;
+  background-color: #afcffd;
+  border: none;
+  padding: 5px;
+  &:hover {
+    cursor: pointer;
+  }
 }

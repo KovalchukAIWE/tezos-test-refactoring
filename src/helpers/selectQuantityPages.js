@@ -1,5 +1,5 @@
 export const selectQuantityPages = [
-  { value: 10, label: 10 },
-  { value: 25, label: 25 },
-  { value: 50, label: 50 },
+  { value: 3, label: 3 },
+  { value: 6, label: 6 },
+  { value: 9, label: 9 },
 ];
