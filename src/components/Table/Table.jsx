@@ -1,5 +1,5 @@
 import React from "react";
-import { useBlocksContext } from "../../context/BlocksContext";
+import { useBlocksContext } from "../../contexts/BlocksContext";
 import { MUTEZ_TO_XTZ } from "../../helpers/constants";
 import styles from "./Table.module.scss";
 

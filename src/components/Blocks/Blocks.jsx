@@ -1,6 +1,6 @@
 import React from "react";
 import Select from "react-select";
-import { useBlocksContext } from "../../context/BlocksContext";
+import { useBlocksContext } from "../../contexts/BlocksContext";
 import Table from "../Table";
 import Pagination from "../Pagination/Pagination";
 import { selectQuantityPages } from "../../helpers/selectQuantityPages";
