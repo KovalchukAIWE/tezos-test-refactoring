@@ -9,7 +9,7 @@ const BurgerIcon = () => (
   >
     <path
       d='M0 0H22V2.75H0V0ZM0 6.875H22V9.625H0V6.875ZM0 13.75H22V16.5H0V13.75Z'
-      fill='#F0F2F4'
+      fill='currentColor'
     />
   </svg>
 );

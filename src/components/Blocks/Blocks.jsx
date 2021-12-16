@@ -1,14 +1,12 @@
 import React from "react";
-import Select from "react-select";
 import { useBlocksContext } from "../../contexts/BlocksContext";
 import Table from "../Table";
 import Pagination from "../Pagination/Pagination";
-import { selectQuantityPages } from "../../helpers/selectQuantityPages";
 
 import styles from "./Blocks.module.scss";
 
 const Blocks = () => {
-  const { blocks, limit, offset, handleLimit } = useBlocksContext();
+  const { blocks, limit, offset } = useBlocksContext();
 
   const indexOfLastBlock = offset * limit;
   const indexOfFirstBlock = indexOfLastBlock - limit;
@@ -27,15 +25,6 @@ const Blocks = () => {
         </div>
         <div className={styles.blocks__table}>
           <p className={styles.blocks__name}>Tezos blocks</p>
-          <div className={styles.blocks__select}>
-            <p className={styles.blocks__text}>Items per page</p>
-            <Select
-              defaultValue={selectQuantityPages[0]}
-              options={selectQuantityPages}
-              onChange={(e) => handleLimit(e.value)}
-              className={styles.blocks__quantity}
-            />
-          </div>
           <Table blocks={currentBlock} />
           <Pagination />
         </div>

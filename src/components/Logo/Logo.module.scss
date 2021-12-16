@@ -1,0 +1,19 @@
+.logo {
+  margin-top: 8px;
+  background-image: url("../../img/headerLogo.svg");
+  background-repeat: no-repeat;
+  color: #ffffff;
+  width: 26px;
+  height: 37px;
+}
+
+.nav__logo {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  @media (min-width: 768px) {
+    width: 120px;
+  }
+}

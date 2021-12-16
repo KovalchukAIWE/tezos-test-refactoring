@@ -1,8 +1,10 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, createRef } from "react";
+import { useCallback } from "react/cjs/react.development";
+import { NavLink } from "react-router-dom";
 import BurgerIcon from "../BurgerIcon/BurgerIcon";
 
 import styles from "./Header.module.scss";
+import Logo from "../Logo";
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -10,13 +12,29 @@ const Header = () => {
     ? `${styles.navigation} ${styles.show}`
     : styles.navigation;
 
+  const navRef = createRef();
+
+  const clickOutside = useCallback((e) => {
+    setShowNav((prev) => {
+      if (e.target === e.currentTarget) return false;
+      return prev;
+    });
+  }, []);
+  useEffect(() => {
+    if (showNav) {
+      navRef.current.addEventListener("click", clickOutside);
+    } else {
+      navRef.current.removeEventListener("click", clickOutside);
+    }
+  }, [showNav]);
+
+  const setActive = ({ isActive }) =>
+    isActive ? styles.active : styles.nav__btn;
+
   return (
     <div className={styles.container}>
       <nav className={styles.nav}>
-        <div className={styles.nav__logo}>
-          <div className={styles.logo} />
-          <p>Tezos4all</p>
-        </div>
+        <Logo />
         <div className={styles.burger}>
           <button
             type='button'
@@ -26,19 +44,20 @@ const Header = () => {
             <BurgerIcon />
           </button>
         </div>
-        <div className={classNav} />
-        <ul className={styles.nav__items}>
-          <Link to='/' className={styles.nav__link}>
-            <button type='button' className={styles.nav__btn}>
-              Home
-            </button>
-          </Link>
-          <Link to='/login' className={styles.nav__link}>
-            <button type='button' className={styles.nav__btn}>
-              Login
-            </button>
-          </Link>
-        </ul>
+        <div className={classNav} ref={navRef}>
+          <ul className={styles.nav__items}>
+            <li>
+              <NavLink exact to='/' className={setActive}>
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink exact to='/login' className={setActive}>
+                Login
+              </NavLink>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   );

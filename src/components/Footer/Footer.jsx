@@ -1,15 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logo from "../Logo";
 
 import styles from "./Footer.module.scss";
 
 const Footer = () => (
   <div className={styles.container}>
     <nav className={styles.nav}>
-      <div className={styles.nav__logo}>
-        <div className={styles.logo} />
-        <p>Tezos4all</p>
-      </div>
+      <Logo />
       <ul className={styles.nav__items}>
         <Link to='/' className={styles.nav__link}>
           Home
